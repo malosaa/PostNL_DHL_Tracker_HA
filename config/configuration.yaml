@@ -1,0 +1,12 @@
+homeassistant:
+    customize: !include customize.yaml
+    packages: !include_dir_named packages
+
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+logbook:  
+# Text to speech
+tts:
+  - platform: google_translate
+    service_name: google_say

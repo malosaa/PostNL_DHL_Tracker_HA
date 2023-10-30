@@ -1,0 +1,62 @@
+square: false
+type: grid
+cards:
+  - type: entities
+    entities:
+      - entity: input_text.postnl_tracking_code
+      - entity: input_text.postnl_postal_code
+  - type: markdown
+    content: >
+      **PostNL Tracking Information**
+
+
+      - **Identification:** {{ states('sensor.postnl_identification') }}
+
+      - **Recipient:**
+        - Name: {{ states('sensor.postnl_recipient') }}
+        - Street: {{ state_attr('sensor.postnl_recipient', 'streetname') }}
+        - Postal Code: {{ state_attr('sensor.postnl_recipient', 'postalCode') }}
+        - Town: {{ state_attr('sensor.postnl_recipient', 'town') }}
+        - Country: {{ state_attr('sensor.postnl_recipient', 'country') }}
+      - **Sender:**
+        - Name: {{ states('sensor.postnl_sender') }}
+        - Company Name: {{ state_attr('sensor.postnl_sender', 'companyname') }}
+        - Street: {{ state_attr('sensor.postnl_sender', 'streetname') }}
+        - Postal Code: {{ state_attr('sensor.postnl_sender', 'postalCode') }}
+        - Town: {{ state_attr('sensor.postnl_sender', 'town') }}
+        - Country: {{ state_attr('sensor.postnl_sender', 'country') }}
+      - **Delivery Time:** {{ states('sensor.postnl_delivery_time') }}
+
+      - **Is Delivered:** {{ state_attr('sensor.postnl_delivery_time',
+      'isDelivered') }}
+
+      - **Delivery Date:** {{ state_attr('sensor.postnl_delivery_time',
+      'deliveryDate') }}
+
+      - **Is Delivery Date Changed:** {{
+      state_attr('sensor.postnl_delivery_time', 'isDeliveryDateChanged') }}
+
+      - **Is Picked Up at Retail Location:** {{
+      state_attr('sensor.postnl_delivery_time', 'isDeliveryDateChanged') }}
+
+      - **Before First Delivery Attempt:** {{
+      state_attr('sensor.postnl_delivery_time', 'beforeFirstDeliveryAttempt') }}
+
+      - **Is Return Shipment:** {{ state_attr('sensor.postnl_delivery_time',
+      'isReturnShipment') }}
+
+      - **Expected Return Date:** {{ state_attr('sensor.postnl_delivery_time',
+      'expectedReturnDate') }}
+
+      - **Is at Retail Location:** {{ state_attr('sensor.postnl_delivery_time',
+      'isAtRetailLocation') }}
+
+      - **Has Proof of Delivery:** {{ state_attr('sensor.postnl_delivery_time',
+      'hasProofOfDelivery') }}
+
+      - **Status Message:** {{ state_attr('sensor.postnl_delivery_time',
+      'statusMessage') }}
+
+      - **Status Route:** {{ state_attr('sensor.postnl_delivery_time',
+      'statusRoute') }}
+columns: 1
