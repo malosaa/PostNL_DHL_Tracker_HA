@@ -40,3 +40,4 @@ The integration generates a collection of entities with associated attributes fo
 
 **With this improved integration, you can easily track your PostNL shipments and access all the essential tracking information right in your Home Assistant dashboard.** 
 
+[click here](https://github.com/malosaa/PostNL_DHL_Tracker_HA/blob/main/TUTORIAL.md)
