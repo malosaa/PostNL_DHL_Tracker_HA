@@ -30,6 +30,7 @@ rest:
         value_template: 'ok'
         json_attributes:
           - "processed"
+          - "colli"
  
 sensor:
   - platform: template
