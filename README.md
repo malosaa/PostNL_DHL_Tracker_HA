@@ -14,7 +14,9 @@ Here's a sneak peek:
 * Works perfectly with Dutch tracking codes
 * Seamless testing process
 
-Soon, I'll be sharing the complete code, so you can set it up yourself. Stay tuned for the release! Your Dutch PostNL and DHL tracking will soon be at your fingertips. :rocket:
+Soon, I'll be sharing the rest of the code that contains DHL, so you can set it up yourself. Stay tuned for the release! Your Dutch PostNL and DHL tracking will soon be at your fingertips. :rocket:
+[POSTNL Code Has Been Released](https://github.com/malosaa/PostNL_DHL_Tracker_HA/blob/main/TUTORIAL.md) :fire:
+
 
 here a screenshot, sorry some info needed to be redacted as its from a tester.
 ![image](https://github.com/malosaa/PostNL_DHL_Tracker_HA/assets/13116501/d48b510a-9379-452b-b916-ed77633fd778)
@@ -40,4 +42,4 @@ The integration generates a collection of entities with associated attributes fo
 
 **With this improved integration, you can easily track your PostNL shipments and access all the essential tracking information right in your Home Assistant dashboard.** 
 
-[click here](https://github.com/malosaa/PostNL_DHL_Tracker_HA/blob/main/TUTORIAL.md)
+
